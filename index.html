@@ -1,0 +1,104 @@
+<script>
+    //Do Thanh Nhan
+    // câu 1
+    function FindNearestNumber(a,b){
+        let numberOne = 100 - a;
+        let numberTwo = 100 - b;
+        if(numberOne > numberTwo){
+            return b;
+        }
+        return a;
+    }
+    console.log(FindNearestNumber(80,81))
+    // Câu 2
+    function CheckNumberInRange(a,b){
+        if(a >= 40 && b <=60 && b >= 40 && a <= 60){
+            return "A,B nằm trong phạm vi 40...60";
+        }
+        else if(a >= 70 && b<=100 && b >= 70 && a <= 100){
+            return "A,B nằm trong phạm vi 70...100";
+        }
+        else{
+            return "A,B không nằm trong phạm vi 40...60 và không nằm trong phạm vi 70...100";
+        }
+    }
+
+    // Ví dụ
+    console.log(CheckNumberInRange(45,55));
+
+    // câu 3
+
+    function CheckCharacter(a){
+        let CertainString = "DoThanhNhan"; // kí tự D sẽ là vị trí 0, kí tự T sẽ là vị trí 2
+
+        if(CertainString.includes(a,2) || CertainString.includes(a,3) || CertainString.includes(a,4)){
+            return true;
+        }
+        return false;
+    }
+   
+    console.log(CheckCharacter("a"));
+    console.log(CheckCharacter("o"));
+
+
+
+        // Câu 4
+        function TotalNumber(a,b) {
+        let sum = a+b;
+        if(sum >= 50 && sum <=80){
+            return 65;
+        }
+        return 80;
+    }
+
+    console.log(TotalNumber(0,49))
+    console.log(TotalNumber(50,10))
+      // Câu 5. 
+      function DuplicateCharacter(){
+        str = "nguyena";
+        return str.charAt(str.length-1)+str.charAt(str.length-2)+str.charAt(str.length-3);
+    }
+    
+    for(let i =0; i< 3;i++){// in ra 4 lần
+        console.log(DuplicateCharacter());
+    }
+    //Cau 6
+        let a ="1DoThanhNhan2";
+    console.log(a.slice(1,12))
+    // Cau 7
+    function sumArray(mang){
+      let sum = 0;
+         for (let i = 0; i < mang.length; i++){
+        sum += mang[i];
+    }
+    
+    return sum;
+}
+//Cau 8
+
+//Cau 9
+    let num = [20, 100, 99, 61, 54, 83, 55];
+console.log("Pt đầu tiên và cuối cùng:"+ num[0], num[num.length-1]);
+//Cau 10
+    function Check(x){
+        let a= 10;
+        let b = 20;
+        let c = 30;
+        if(x == "+" && (c === (a+b))){
+            return true;
+        }
+        else if(x == "-" && (c === (a-b))){
+            return true;
+        }
+        else if(x == "*" && (c === (a*b))){
+            return true;
+        }
+        else if(x == "/" && (c === (a/b))){
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+    console.log(Check("+"));//ktr dk +
+</script>

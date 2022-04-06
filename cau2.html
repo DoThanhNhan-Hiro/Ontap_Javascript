@@ -1,0 +1,16 @@
+<script>
+      function CheckNumberInRange(a,b){
+        if(a >= 40 && b <=60 && b >= 40 && a <= 60){
+            return "A,B nằm trong phạm vi 40...60";
+        }
+        else if(a >= 70 && b<=100 && b >= 70 && a <= 100){
+            return "A,B nằm trong phạm vi 70...100";
+        }
+        else{
+            return "A,B không nằm trong phạm vi 40...60 và không nằm trong phạm vi 70...100";
+        }
+    }
+
+    // Ví dụ
+    console.log(CheckNumberInRange(45,55));
+</script>

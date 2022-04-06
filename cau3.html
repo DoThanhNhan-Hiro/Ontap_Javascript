@@ -1,0 +1,14 @@
+<script>
+    function CheckCharacter(a){
+        let CertainString = "DoThanhNhan"; // kí tự D sẽ là vị trí 0, kí tự T sẽ là vị trí 2
+
+        if(CertainString.includes(a,2) || CertainString.includes(a,3) || CertainString.includes(a,4)){
+            return true;
+        }
+        return false;
+    }
+    // Kiểm tra xem có chứa chữ a không
+    console.log(CheckCharacter("a"));
+    // kiểm tra có chứa o không
+    console.log(CheckCharacter("o"));
+</script>
